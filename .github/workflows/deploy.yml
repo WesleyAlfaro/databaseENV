@@ -34,9 +34,6 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    env:
-      MONGODB_USERNAME: wesleyvaldini_db_user
-      MONGODB_DB_NAME: mydatabase
     steps:
       - name: Output information
         run: |        
